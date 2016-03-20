@@ -47,6 +47,19 @@ int main(int argc, char** argv)
 
         window.clear();
         
+        xRed = xRed - .02;
+        yRed = yRed  + .02;
+        
+        xGreen = xGreen + .01;
+        yGreen = yGreen - .01;
+        
+        xBlue = xBlue + .03;
+        yBlue = yBlue + .03;
+        
+        circleRed.setPosition(xRed, yRed);
+        circleGreen.setPosition(xGreen, yGreen);
+        circleBlue.setPosition(xBlue, yBlue);
+        
         window.draw(circleRed);
         window.draw(circleGreen);
         window.draw(circleBlue);
